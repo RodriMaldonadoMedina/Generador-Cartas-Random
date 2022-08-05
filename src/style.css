@@ -1,1 +1,33 @@
 @import "~bootstrap/dist/css/bootstrap.min.css";
+
+:root {
+  /* declaro estas variables para poder modificarlas con js */
+  --ancho-carta: 250px;
+  --alto-carta: 400px;
+  --fontSize: 3em;
+}
+
+body {
+  background-image: url("https://media.gettyimages.com/photos/cards-picture-id172962377?s=2048x2048");
+  background-repeat: no-repeat;
+  background-size: cover;
+  z-index: -1;
+}
+
+.mi-card {
+  width: var(--ancho-carta);
+  height: var(--alto-carta);
+  margin: auto;
+  background-color: aliceblue;
+}
+
+.mi-numero {
+  font-size: var(--fontSize);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.mi-icono-bottom {
+  transform: rotate(-180deg);
+}
